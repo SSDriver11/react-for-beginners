@@ -5,7 +5,7 @@ import styles from "./Movie.module.css";
 function Movie({ id, title, year, coverImg, summary, genres }) {
   return (
     <div className={styles.movie}>
-      <a href={`/movie/${id}`}><img src={coverImg} alt={title} className={styles.movie_img}/></a>
+      <Link to={`/movie/${id}`}><img src={coverImg} alt={title} className={styles.movie_img}/></Link>
       <div>
         <h2 className={styles.movie_title}>
           <Link to={`/movie/${id}`}>{title}</Link>
